@@ -85,7 +85,7 @@ def get_data(month, year, post=POST, host=HOSTNAME,
     """
 
     # setup the POST
-    post = post.format(year=year, month=month_name[month], frequency=frequency)
+    post = post.format(year=year, month_num=month, month=month_name[month], frequency=frequency)
     # make sure post has no EOLs
     post = post.replace('\n','')
 
